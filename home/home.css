@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9f7f6, rgb(100, 76, 60);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 7%;
+  height: 7%;
+}
+.img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 576px) {
+  .card-group.card-group-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+}
+
+.card-group.card-group-scroll > .card {
+  flex-basis: 35%;
+}
+.card-img-top {
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+}
+.card {
+  background: rgb(181, 151, 121, 0.5);
+}
+.card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0, 0.23);
+  transform: translate(0px, -8px);
+}
+a {
+  text-decoration: none;
+  color: beige;
+}
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: whitesmoke;
+}
+.button_home {
+  width: 150px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #8c4414;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.home {
+  background-color: #8c4414;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  color: beige;
+  z-index: -1;
+  transition: 0.5s;
+}
+.button_home:hover .home {
+  width: 100%;
+}
+a:hover::after {
+  text-decoration: none;
+}
+.button_home:hover {
+  border: none;
+}
+.btn_card {
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 20px;
+  height: fit-content;
+  color: #fff;
+  padding: 15px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  padding-bottom: 15px;
+  background-color: #8c4414;
+  border-radius: 10px;
+}
